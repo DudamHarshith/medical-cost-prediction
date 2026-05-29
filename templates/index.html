@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medical Cost Prediction</title>
+</head>
+<body>
+    <h2>Medical Insurance Cost Predictor</h2>
+    <form action="/predict" method="post">
+        Age: <input type="text" name="age"><br><br>
+        Sex (0=Female, 1=Male): <input type="text" name="sex"><br><br>
+        BMI: <input type="text" name="bmi"><br><br>
+        Children: <input type="text" name="children"><br><br>
+        Smoker (0=No, 1=Yes): <input type="text" name="smoker"><br><br>
+        Region (0=southwest,1=southeast,2=northwest,3=northeast): <input type="text" name="region"><br><br>
+        <input type="submit" value="Predict">
+    </form>
+    <h3>{{ prediction_text }}</h3>
+</body>
+</html>
